@@ -1,0 +1,17 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: "Shopping"
+  devtools:
+    add-properties: false
+  h2:
+    console:
+      enabled: true
+      path: "/h2"
+  profiles:
+    include: null
+  data:
+    mongodb:
+      uri: "mongodb+srv://<user>:<pwd>@<cluster>.mongodb.net/?retryWrites=true&w=majority"
+      database: "shoppingCart"
